@@ -23,9 +23,10 @@ int main() {
   cout << fixed << setprecision(3);
   
   for (double t : t_values) {
-    v = sqrt(g * m / k) * tanh (t * sqrt( (g * k / m)));
+    v = sqrt(g * m / k) * tanh (t * sqrt((g * k / m)));
     cout << t  << "\t" << v << endl;
   }
     
   return 0;
+
 }
