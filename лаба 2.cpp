@@ -20,16 +20,18 @@ int main() {
   cout << fixed;
   cout.precision(3);
 
-  while (t<1) {
+  while (t < 1) {
     v = sqrt(g * m / k) * tanh(t * sqrt((g * k / m)));
     cout << t  << "\t" << v << endl;
-    t+=0.25;
+    t += 0.25;
   }
 
   do {
     v = sqrt(g * m / k) * tanh(t * sqrt((g * k / m)));
     cout << t  << "\t" << v << endl;
-    t+=1; } while (t<6);
+    t += 1; 
+  } while (t < 6);
     
   return 0;
 }
+
